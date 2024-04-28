@@ -74,6 +74,7 @@
 
     // 7. sort Exercise
     // Sort the people alphabetically by last name
+    people.sort( (a, b) => a.substr(a.indexOf(" "))[1] > b.substr(b.indexOf(" "))[1] ? 1 : -1)
 
     // 8. Reduce Exercise
     // Sum up the instances of each of these
