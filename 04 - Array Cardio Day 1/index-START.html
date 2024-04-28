@@ -78,7 +78,15 @@
 
     // 8. Reduce Exercise
     // Sum up the instances of each of these
-    const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
+    const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ]
+    let transportation = data.reduce( (obj, currItem) => {
+      if(!Object.hasOwn(obj, currItem))
+        obj[currItem] = 0;
+      obj[currItem]++;
+      console.log(currItem)
+      return obj
+    }, {})
+    
 
   </script>
 </body>
